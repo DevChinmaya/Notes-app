@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Notes with Calendar</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🖋️ Premium Notes</h1>
+    <p>Click a date to view or add notes, or manage all notes below</p>
+  </header>
+
+  <main>
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+      <div class="calendar-header">
+        <button id="prevMonth">❮</button>
+        <h2 id="monthYear"></h2>
+        <button id="nextMonth">❯</button>
+      </div>
+      <div class="calendar-grid" id="calendar"></div>
+    </section>
+
+    <!-- Notes Section -->
+    <section class="notes-section">
+      <h2 id="selectedDateTitle">Select a Date</h2>
+      <div class="note-form">
+        <input type="text" id="noteTitle" placeholder="Note Title">
+        <textarea id="noteContent" rows="4" placeholder="Write your note..."></textarea>
+        <button id="addNoteBtn">Add Note</button>
+      </div>
+      <div class="notes-list" id="notesList"></div>
+    </section>
+  </main>
+
+  <!-- ALL NOTES SECTION -->
+  <section class="all-notes-section">
+    <h2>📚 All Notes</h2>
+    <div class="all-notes" id="allNotesList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
